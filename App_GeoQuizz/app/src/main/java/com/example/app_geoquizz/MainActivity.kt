@@ -39,30 +39,30 @@ class MainActivity : AppCompatActivity() {
         showSentence()
         btNext.setOnClickListener {
             position++
-            if (position >= questions.size){
-               position = 0
+            if (position >= questions.size) {
+                position = 0
             }
             showSentence()
         }
 
         btYes.setOnClickListener {
-            if (questions[position].answer){
+            if (questions[position].answer) {
                 showSuccessQuestion()
-            }else{
+            } else {
                 showFailQuestion()
             }
         }
         btNo.setOnClickListener {
-            if (!questions[position].answer){
+            if (!questions[position].answer) {
                 showSuccessQuestion()
-            }else{
+            } else {
                 showFailQuestion()
             }
         }
     }
 
     private fun showFailQuestion() {
-        Toast.makeText(this,"Incorrecto",Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Incorrecto", Toast.LENGTH_SHORT).show()
     }
 
     private fun showSuccessQuestion() {
