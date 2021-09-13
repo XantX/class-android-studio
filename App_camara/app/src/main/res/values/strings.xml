@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">App_camara</string>
+    <string name="verificar_permisos_de_camara">Verificar permisos de camara!</string>
+</resources>
